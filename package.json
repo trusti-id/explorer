@@ -2,7 +2,7 @@
   "name": "explorer",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "node patch.js && ng build",
+    "postinstall": "node patch.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
