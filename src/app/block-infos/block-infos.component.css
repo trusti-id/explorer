@@ -1,0 +1,13 @@
+.buttons {
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: right;
+    clear: both
+}
+
+.hash-table {
+    padding: 0px;
+    float: left;
+    margin: 0px;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+      <div class="navbar-header">
+          <span class="icon-bar"></span>
+          <a routerLink="/" routerLinkActive="active" class="navbar-brand">Trusti Block Explorer</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <form  name="search_form" ng-controller="mainCtrl" ng-submit="processRequest()"  class="navbar-form navbar-right">
+                  <div class="form-group">
+                      <input type="text" placeholder="Tx Hash, Address or Block number" name="requestType" required  ng-model="ethRequest"  class="form-control">
+                      <br>
+                  </div>
+                  <button type="submit" class="btn btn-success">Search</button>
+              </form>
+          </ul>
+      </div>
+  </div>
+</nav>

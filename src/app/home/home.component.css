@@ -1,0 +1,19 @@
+.container {
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center; 
+    margin-top: 30px;
+}
+
+table {
+    padding: 0px;
+    float: left;
+    margin: 0px;
+    width: 100%
+}
