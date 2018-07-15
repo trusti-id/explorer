@@ -1,4 +1,4 @@
-# Explorer
+# Trusti Explorer
 
 ![Trusti Explorer Screenshot](https://i.imgur.com/JLB5YI2.png)
 
