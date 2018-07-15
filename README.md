@@ -1,6 +1,6 @@
 # Explorer
 
-![Trusti Explorer Screenshot](https://i.imgur.com/DxX7w9M.png)
+![Trusti Explorer Screenshot](https://i.imgur.com/JLB5YI2.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
