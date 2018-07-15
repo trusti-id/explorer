@@ -34,9 +34,9 @@ GPL (see LICENSE)
 
 ## Installation
 
-Start the program. All dependencies will be automatically downloaded
+Start the development server. All dependencies will be automatically downloaded
 
-Then visit http://localhost:8000 in your browser of choice. You might get an error message:
+Then visit http://localhost:4200 in your browser of choice. You might get an error message:
 
 `geth --rpc --rpccorsdomain "http://localhost:4200"`
 
