@@ -9,15 +9,16 @@ import { Web3Service } from '../web3.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  blocks: Array<Block>;
+  blocks: Array<Block> = [];
   web3: Web3;
   maxBlocks = 50;
-  blockNum: number;
+  blockNum = 0;
   constructor(private shared: Web3Service) { }
 
   ngOnInit() {
     this.web3 = this.shared.web3;
-    this.web3.eth.getBlockNumber().then( number => {
+    this.web3.eth.getBlockNumber()
+    .then( number => {
       if (this.maxBlocks > number) {
         this.maxBlocks = number + 1;
       }
@@ -27,9 +28,7 @@ export class HomeComponent implements OnInit {
 
   async processArray(num: number) {
     for (let i = 0; i < this.maxBlocks; i++) {
-      const block = await this.web3.eth.getBlock(num - i);
-      this.blocks.push(block);
-      console.log('block pushed ' + block.number);
+      this.blocks.push(await this.web3.eth.getBlock(num - i));
     }
   }
 

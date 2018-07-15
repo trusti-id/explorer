@@ -10,7 +10,7 @@ import { Web3Service } from '../web3.service';
 })
 export class AddressInfosComponent implements OnInit, OnDestroy {
   web3: Web3;
-  private addressId: number;
+  private addressId: string;
   private sub: any;
   balance: number;
   balanceInEther: number;
@@ -20,9 +20,9 @@ export class AddressInfosComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.web3 = this.shared.web3;
     this.sub = this.route.params.subscribe( params => {
-      this.addressId = +params['addressId'];
+      this.addressId = params['addressId'];
       if (this.addressId !== undefined) {
-        this.web3.eth.getBalance(String(this.addressId), null, null).then( result => {
+        this.web3.eth.getBalance(this.addressId, null, null).then( result => {
           this.balance = result;
           this.balanceInEther = this.web3.utils.fromWei(result, 'ether');
         });

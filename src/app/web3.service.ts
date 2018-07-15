@@ -19,9 +19,11 @@ export class Web3Service {
   }
 
   checkConnection() {
-    this.web3.eth.net.isListening().then((s) => {
+    this.web3.eth.net.isListening()
+    .then((s) => {
       console.log('We\'re still connected to the node');
-    }).catch((e) => {
+    })
+    .catch((e) => {
       console.log('Lost connection to the node, reconnecting');
       this.web3.setProvider(this.provider);
     });

@@ -1,0 +1,23 @@
+.confirmations {
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: right;
+    clear: both;
+}
+
+.arrow {
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tx-table {
+    padding: 0px;
+    float: left;
+    margin: 0px;
+    width: 100%;
+}
+
+.container {
+    padding-top: 50px;
+}

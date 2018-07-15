@@ -3,8 +3,8 @@
       <small>View information about an Ethereum Address</small>
   </h1>
   
-  <div id="address-97785883" class="addressdiv">
-      <table class="table table-striped" cellpadding="0" cellspacing="0" style="padding:0px;float:left;margin:0px;width:100%">
+  <div class="addressdiv">
+      <table class="table table-striped address-table" cellpadding="0" cellspacing="0">
           <tbody>
           <tr>
               <th colspan="3" align="left">{{addressId}} <span class="pull-right"></span></th>
@@ -18,8 +18,9 @@
               <td>{{balance}}</td>
           </tr>
           <tr>
+                <!-- value_expression | currency [ : currencyCode [ : display [ : digitsInfo [ : locale ] ] ] ] -->
               <td>Balance (Ether)</td>
-              <td>{{balanceInEther}}</td>
+              <td>{{balanceInEther | currency : ' '}}</td>
           </tr>
           </tbody>
       </table>
