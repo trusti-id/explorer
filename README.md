@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## License
+
+GPL (see LICENSE)
+
+## Installation
+
+Start the program. All dependencies will be automatically downloaded
+
+Then visit http://localhost:8000 in your browser of choice. You might get an error message:
+
+`geth --rpc --rpccorsdomain "http://localhost:4200"`
+
+Install [geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum "Geth install") if you don't already have it, then run the above command.
+
+Then refresh the page in your browser 
